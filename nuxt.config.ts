@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  buildModules: ['@vueuse/nuxt', '@nuxtjs/strapi'],
+  // buildModules: ['@vueuse/nuxt', '@nuxtjs/strapi'],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
@@ -7,12 +7,12 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxtjs/i18n',
   ],
-  strapi: {
-    url: process.env.STRAPI_URL || 'https://bapi.warsono.id',
-    prefix: '/api',
-    version: 'v4',
-    cookie: {},
-  },
+  // strapi: {
+  //   url: process.env.STRAPI_URL || 'https://bapi.warsono.id',
+  //   prefix: '/api',
+  //   version: 'v4',
+  //   cookie: {},
+  // },
   i18n: {
     locales: ['en', 'id'],
     defaultLocale: 'en',

@@ -9,7 +9,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "npx husky install",
+    "commit": "git add . && pnpm lint:fix && git cz",
+    "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.7",
@@ -48,12 +51,21 @@
     "@types/react": "file:stub/types__react",
     "@vueuse/nuxt": "^9.1.1",
     "babel-loader": "^8.2.5",
-    "eslint": "^8.27.0",
-    "husky": "^8.0.1",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog-zh": "^0.0.2",
+    "eslint": "8.18.0",
+    "husky": "^8.0.2",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.5",
+    "prettier-plugin-tailwindcss": "^0.2.0",
     "swiper": "^8.3.2",
     "tailwindcss": "^3.1.8",
     "vue-loader": "^17.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-zh"
+    }
   }
 }
