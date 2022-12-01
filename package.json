@@ -12,7 +12,8 @@
     "lint:fix": "eslint . --fix",
     "prepare": "npx husky install",
     "commit": "git add . && pnpm lint:fix && git cz",
-    "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "genlog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "deploy": "npx vercel --prod"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.7",
@@ -61,6 +62,7 @@
     "prettier-plugin-tailwindcss": "^0.2.0",
     "swiper": "^8.3.2",
     "tailwindcss": "^3.1.8",
+    "vercel": "^28.7.0",
     "vue-loader": "^17.0.0"
   },
   "config": {
