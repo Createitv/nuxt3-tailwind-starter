@@ -1,7 +1,17 @@
-# Nuxt 3 Tailwind Starter
+
+# Nuxt 3 Tailwind Starter [中文文档](./README.zh-CN.md)
+[![Nuxt3 Tailwind Starter](https://img.shields.io/badge/Nuxt3%20Tailwind%20Starter-1.0.0-blue)]()
+[![Nuxt3](https://img.shields.io/badge/Nuxt3-3.0.0-blue)]()
+[![Nuxt Content v2](https://img.shields.io/badge/Nuxt%20Content-v2.0.1-blue)]()
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.1.8-blue)]()
+[![Nuxt Icon](https://img.shields.io/badge/Nuxt%20Icon-0.1.5-blue)]()
+[![Pinia](https://img.shields.io/badge/Pinia-2.0.24-blue)]()
+[![vee-validate](https://img.shields.io/badge/vee--validate-4.5.4-blue)]()
+[![i18n](https://img.shields.io/badge/i18n-9.2.2-blue)]()
+[![vercel](https://img.shields.io/badge/vercel-28.5.6-blue)]()
+[![pnpm](https://img.shields.io/badge/pnpm--7.17.0-blue)]()
 
 Zero Config Nuxt 3 + Tailwind Starter
-
 ## Features
 - [Nuxt 3](https://v3.nuxtjs.org/)
 - [Nuxt Content v2](https://content.nuxtjs.org/)

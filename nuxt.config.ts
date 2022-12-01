@@ -1,11 +1,17 @@
 export default defineNuxtConfig({
   // buildModules: ['@vueuse/nuxt', '@nuxtjs/strapi'],
+  // buildModules: [
+  //   '@nuxtjs/google-analytics', '@vueuse/nuxt',
+  // ],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
+    '@vueuse/nuxt',
     '@pinia/nuxt',
     'nuxt-icon',
     '@nuxtjs/i18n',
+    // '@nuxtjs/robots',
+    // '@nuxtjs/image',
   ],
   // strapi: {
   //   url: process.env.STRAPI_URL || 'https://bapi.warsono.id',
@@ -46,4 +52,12 @@ export default defineNuxtConfig({
       gaId: '',
     },
   },
+  // googleAnalytics: {
+  //   id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
+  // },
+  // publicRuntimeConfig: {
+  //   googleAnalytics: {
+  //     id: process.env.GOOGLE_ANALYTICS_ID,
+  //   },
+  // },
 })
