@@ -1,5 +1,8 @@
-name: deploy website
-on: [pull_request]
+name: deploy website to vercel
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
 jobs:
   deploy:
     runs-on: ubuntu-latest
