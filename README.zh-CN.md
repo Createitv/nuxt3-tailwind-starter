@@ -62,7 +62,3 @@ npm run build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
-
-### Thanks
-
-[Warsono](https://github.com/gravitano/nuxt3-tailwind-kit)
