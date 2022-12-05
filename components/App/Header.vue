@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const isOpen = ref(false)
 
 const menus = ref([
@@ -13,6 +13,10 @@ const menus = ref([
   {
     text: 'menu_blog',
     to: '/blog',
+  },
+  {
+    text: 'menu_playground',
+    to: '/playground',
   },
   {
     text: 'menu_dashboard',
@@ -46,16 +50,16 @@ const menus = ref([
         justify-between
       "
     >
-      <NuxtLink to="/" class="font-bold text-skin-muted text-lg">
+      <NuxtLink class="font-bold text-skin-muted text-lg" to="/">
         {{ $t('app_name') }}
       </NuxtLink>
       <button
+        aria-label="Menu"
         class="appearance-none px-2 py-2 rounded sm:hidden"
         type="button"
-        aria-label="Menu"
         @click="isOpen = !isOpen"
       >
-        <Icon name="ri:menu-line" class="w-6 h-6" />
+        <Icon class="w-6 h-6" name="ri:menu-line" />
       </button>
       <div
         :class="
@@ -115,11 +119,11 @@ const menus = ref([
 
 <style scoped>
 .navbar-default {
-  --color-text-base: #484848;
+  --color-fill-active: #1d4ed8;
+  --color-fill-hover: #1d4ed8;
   --color-text-active: #ffffff;
+  --color-text-base: #484848;
   --color-text-hover: #ffffff;
   --color-text-muted: #1d4ed8;
-  --color-fill-hover: #1d4ed8;
-  --color-fill-active: #1d4ed8;
 }
 </style>

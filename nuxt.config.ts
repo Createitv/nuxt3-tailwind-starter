@@ -1,11 +1,8 @@
 export default defineNuxtConfig({
   // buildModules: ['@vueuse/nuxt', '@nuxtjs/strapi'],
-  // buildModules: [
-  //   '@nuxtjs/google-analytics', '@vueuse/nuxt',
-  // ],
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxt/content',
+    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     '@pinia/nuxt',
     'nuxt-icon',
@@ -13,6 +10,7 @@ export default defineNuxtConfig({
     // '@nuxtjs/robots',
     // '@nuxtjs/image',
   ],
+  // buildModules: ['@nuxtjs/google-analytics', '@vueuse/nuxt'],
   // strapi: {
   //   url: process.env.STRAPI_URL || 'https://bapi.warsono.id',
   //   prefix: '/api',
@@ -33,6 +31,7 @@ export default defineNuxtConfig({
           menu_home: 'Home',
           menu_store: 'Store',
           menu_blog: 'Blog',
+          menu_playground: 'playground',
           menu_dashboard: 'Dashboard',
         },
         id: {
@@ -42,6 +41,7 @@ export default defineNuxtConfig({
           menu_home: 'Beranda',
           menu_store: 'Toko',
           menu_blog: 'Blog',
+          menu_playground: 'playground',
           menu_dashboard: 'Dasbor',
         },
       },
@@ -53,11 +53,10 @@ export default defineNuxtConfig({
     },
   },
   // googleAnalytics: {
-  //   id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
-  // },
-  // publicRuntimeConfig: {
-  //   googleAnalytics: {
-  //     id: process.env.GOOGLE_ANALYTICS_ID,
-  //   },
-  // },
+  //   id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime
+  // config is provided }, publicRuntimeConfig: { googleAnalytics: { id:
+  // process.env.GOOGLE_ANALYTICS_ID, }, },
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  },
 })
